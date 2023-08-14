@@ -1,14 +1,14 @@
-import LinkedList from "./linkedlist";
+import LinkedList from './linkedlist';
 
-//Tests
+// Tests
 const testList = new LinkedList();
 
-testList.tail() // Error: List is empty
-testList.head() // Error: List is empty
-  
-testList.append(2)
-testList.append(3)
-testList.append(4)
+testList.tail(); // Error: List is empty
+testList.head(); // Error: List is empty
+
+testList.append(2);
+testList.append(3);
+testList.append(4);
 
 console.log(testList.toString()); // ( 2 ) => ( 3 ) => ( 4 ) => null
 
@@ -33,7 +33,7 @@ testList.insertAt(10, 8); // Error: Invalid index
 console.log(testList.find(10)); // 3
 console.log(testList.toString()); // ( 1 ) => ( 2 ) => ( 3 ) => ( 10 ) => null
 
-testList.removeAt(3) 
-testList.removeAt(7) // Error: Invalid index
+testList.removeAt(3);
+testList.removeAt(7); // Error: Invalid index
 
 console.log(testList.toString()); // ( 1 ) => ( 2 ) => ( 3 ) => null
